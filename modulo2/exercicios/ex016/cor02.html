@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente em CSS</title>
+    <style>
+        /*Possíveis direções do degradê: top, right, left, bottom.*/
+
+        * { /*Configurações globais da CSS*/
+            height: 100%;
+        }
+
+        body { /*Ao invés de usar o linear-gradient, você pode utilizar o radial-gradient e colocar a forma dele. Exemplo: circle. */
+
+            background-image: linear-gradient(to right, #007FA2,  #004298, #5163B7, #0A6B7E, #161B21 90%);
+            background-attachment: fixed; /*Deixa o fundo em degradê fixo na tela*/
+
+            /*Você pode personalizar a porcentagem que você quer de cada cor do seu degradê. */
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando Gradientes</h1>
+    <!-- Ao invés de direcionar o sentido que você quer o degradê com o nome do lado, você pode utilizar os graus. Exemplo: 90deg ou -90deg. -->
+</body>
+</html>

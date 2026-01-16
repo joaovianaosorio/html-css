@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do   seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <!--Dentro da tag "source", no componente "media", troque o "min-width" por "max-width" (largura máxima). Coloque 50px a mais do que o tamanho da imagem, pois a largura da barra de rolagem é 50px.)-->
+        <!--A ordem dos sources é de extrema importância. Como nessa configuração está em "max-width", a ordem deve ser da menor imagem para a maior, em ordem crescente. Se estivesse em "min-width", a ordem teria que ser decrescente. O último item dentro de <picture> deve ser a imagem padrão (dentro da tag img).-->
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+
+    <audio src="midia/happy-mistake.mp3" controls autoplay></audio>
+    <br>
+    <!--Tipos de áudios que pegarão nos navegadores com 100% de certeza: MP3; WAV; OGG. Pode ser que o atributo "autoplay" não pegue.-->
+
+    <!--Outra forma de carregar o áudio: a tag "source:src".-->
+    <audio preload="metadata" autoplay controls>
+        <!--Tipos de PRELOAD:
+        AUTO - só vai considerar que o site carregou depois que carregar todo áudio também.
+        METADATA - vai carregar algumas informações como: nome do arquivo; data; duração; etc.
+        NONE - vai carregar nada, só quando o usuário apertar "play" nos controles.-->
+
+        <!--Fique atento com o mediatype do tipo de arquivo.-->
+        <source src="midia/Boom Bap Flick - Quincas Moreira.mp3" type="audio/mpeg">
+        <source src="midia/Boom Bap Flick - Quincas Moreira.ogg" type="audio/ogg">
+        <source src="midia/Boom Bap Flick - Quincas Moreira.wav" type="audio.wav">
+        
+        <!--Se o navegador não carregar o primeiro tipo de áudio, a tag "source" fará com que ele tente carregar o próximo (OBS: tente não usar o tipo de arquivo "wav", ele é muito pesado.-->
+
+        <!--Se o navegador não carregar nenhum tipo de áudio, a mensagem a seguir aparecerá.-->
+
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/Boom Bap Flick - Quincas Moreira.mp3">Clique aqui para baixar o arquivo MP3.</a></p>
+    </audio>
+
+    <br>
+
+    <audio src="midia/Kazoom - Quincas Moreira.mp3" controls loop></audio>
+    <!--LOOP: vai recomeçar o áudio quando ele chegar ao final.-->
+    
+</body>
+</html>

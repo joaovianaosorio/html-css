@@ -1,0 +1,22 @@
+Variáveis em CSS
+
+Toda linguagem de programação tem variável, mas nem toda linguagem que tem variável é uma linguagem de programação.
+
+Para criar suas variáveis globais, você deve inseri-las na pseudoclasse chamada root. Nela, você pode dar o nome que quiser para suas variáveis.
+Exemplo: 
+:root {
+
+--cor3: #44hgf2; (No exemplo, "cor3" é o nome da varíavel)
+--cor4: #8eef56;
+--fonte-padrao: Arial, Helvetica, sans-serif;
+}
+
+O root serve para colocar as váriaveis, mas para fazer uma configuração global (uma configuração que vai afetar o estilo de todos os seus elemetos), você usa o *.
+Exemplo:
+
+* {
+	margin: 0px;
+	padding: 0px;
+	color: black;
+}
+

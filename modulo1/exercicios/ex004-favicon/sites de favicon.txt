@@ -1,0 +1,6 @@
+O modelo de imagem melhor para um ícone do site é o ICO.
+
+Sites de Favicon:
+favicon.cc
+iconarchive
+favicon.io

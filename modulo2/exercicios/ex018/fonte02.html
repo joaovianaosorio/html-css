@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+    <title>Fontes Externas</title>
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+        @font-face {
+            font-family: 'Love'; /*Você pode colocar o nome que você quiser.*/
+            src: url('fonts/love larry ttf.ttf');
+            font-weight: normal; /*Isso aqui mostra que a fonte funciona melhor no normal.*/
+            font-style: normal;
+        }
+
+        /*Tipos de format ()
+        - opentype (.otf)
+        - truetype (.ttf)
+        - embedded-opentype ()
+        - truetype-aat (Apple Advanced Typography)
+        - svg
+
+        Se você quiser colocar a mesma fonte com outro tipo de formato de arquivo, basta  colocar uma vírgula depois da primeira fonte e a URL. Exemplo: src: url('love larry ttf.ttf'), url ('love larry oft.oft');
+        */
+
+        body {
+            font-family: 'Kaushan Script', cursive; 
+            margin: 50px;
+        }
+
+        h1 {
+            font-family: 'Love', Times, serif;
+            font-size: 3em;
+            font-weight: normal;
+        }
+
+        /*Um excelente site para retirar fontes que não tem no Google Fonts, é o dafont.com.
+
+        Tome cuidado com as fontes sem acento e as particularidades de cada fonte. 
+        
+        As fontes podem vir com ".ttf" ou ".otf", as fontes irão rodar melhor dependendo do navegador.*/
+    </style>
+</head>
+<body>
+    <h1>OSÓRIOLOVER</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat maxime iste repellendus cum enim, eos earum ipsam distinctio molestias sed voluptatibus delectus animi dolores, sapiente soluta porro minus non eaque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta dignissimos recusandae ut cum vero labore ipsa, cupiditate, vitae assumenda vel amet pariatur quam! Quidem, eius unde voluptatem neque dolor in.</p>
+</body>
+</html>

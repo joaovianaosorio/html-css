@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shotcut icon" href="favicon.ico" type="image/x-icon">
+    <title>d007</title>
+</head>
+<body>
+    <h1>Imagem Flexível</h1>
+    <p>Você está vendo a imagem completa? Experimente ampliar ou diminuir o tamanho da sua janela para ter novas experiências. </p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="neyyy.jpg" type="image/jpg">
+        <source media="(max-width: 1050px)" srcset="ney-jr.jpg" type="image/jpg">
+        <!--Dentro da tag "source", no componente "media", troque o "min-width" por "max-width" (largura máxima). Coloque 50px a mais do que o tamanho da imagem, pois a largura da barra de rolagem é 50px.)-->
+        <!--A ordem dos sources é de extrema importância. Como nessa configuração está em "max-width", a ordem deve ser da menor imagem para a maior, em ordem crescente. Se estivesse em "min-width", a ordem teria que ser decrescente. O último item dentro de <picture> deve ser a imagem padrão (dentro da tag img).-->
+        <img src="ney-junior.jpg" alt="Imagem flexível">
+    </picture>
+</body>
+</html>

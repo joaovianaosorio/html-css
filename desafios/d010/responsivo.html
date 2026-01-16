@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Responsividade</title>
+    <style>
+        body {
+            background-color: gray;
+        }
+
+        main {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+
+            min-width: 280px; /*320px é a largura de celulares mais antigos, porém, existe a margin do nosso body, por isso, a largura fica de 280px para conseguir ser acessível a todos os dispositivos.*/
+            max-width: 800px;
+            margin: auto;
+        }
+
+        /*A forma a seguir é um modelo de como odemos deixar imagens responsivas. Nós também podemos deixá-las responsivas usando a tag <picture> e configurando. */
+        img {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Testando Responsividade</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus autem veritatis laboriosam libero aut necessitatibus tempore! Aperiam, voluptatem ducimus, at incidunt sequi perferendis voluptatibus error distinctio voluptas voluptate ipsam saepe. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur eius dolore aut delectus ipsam ipsum! Voluptatibus, voluptatum blanditiis officia, in voluptas aliquid enim, dolorum ipsam quod expedita perferendis excepturi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore aut, qui eos sint debitis temporibus recusandae porro! Quae perferendis est unde minima? Adipisci earum voluptate modi doloremque amet possimus corrupti?</p>
+        <picture>
+            <source media="(max-width: 600px)" srcset="imagens/irina-blok-pq.jpg">
+            <img src="imagens/irina-blok.jpg" alt="Irina Blok">
+        </picture>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt fuga debitis qui recusandae, eveniet quis, eum et inventore distinctio at dolorem consectetur dolor fugiat incidunt voluptatem dignissimos consequuntur unde quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam esse voluptates fugit labore at officiis, ipsam rerum nulla cum consequatur neque quibusdam, unde earum atque facere illo deserunt praesentium eveniet.</p>
+    </main>
+</body>
+</html>

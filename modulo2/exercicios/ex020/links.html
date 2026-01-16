@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <!-- SELETORES PERSONALIZADOS
+        # = id
+        . = class
+        : = pseu-class
+        :: = pseu-element
+        > = children
+    -->
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a {
+            color: red;
+            text-decoration: none;
+        }
+
+        a:visited { /*É feito para falar do que já foi visitado.*/
+            color: darkred;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: black;
+        }
+
+        a:active { /*Quando o elemento estiver ativo/clicado.*/
+            color: yellow;
+        }
+
+        /*Um pseudo-elemento CSS é uma palavra-chave adicionada a um seletor que permite que você estilize uma parte específica do elemento selecionado*/
+        .especial::before {
+            content: '⇒';
+        }
+    
+        .especial::after {
+            /*Content = conteúdo. Ele indica um conteúdo.*/
+            content: '⇐';
+            text-decoration: none;
+            font-weight: normal;
+        }
+
+        .especial {
+            background-color: rgb(207, 139, 139);
+        }
+
+        /* Site de símbolos: https://erikasarti.com/html/dingbats-simbolos-desenhos/ */
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io" target="_blank">Repositório GitHub</a></li>
+        <li><a href="https://www.youtube.com/@CursoemVideo" target="_blank" class="especial">Canal do YouTube</a></li>
+        <li><a href="https://www.cursoemvideo.com" target="_blank" class="especial">Site do Curso em Video</a></li>
+    </ul>
+</body>
+</html>

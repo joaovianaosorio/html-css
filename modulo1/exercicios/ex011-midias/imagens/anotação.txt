@@ -1,0 +1,8 @@
+Foto-P = para celular (300x300).
+Foto-M = para tablet (700x700).
+Foto-G = para notebook/computador (1000x1000).
+
+Lembre-se, você deve diminuir o tamanho do arquivo (imagem) para seu site ficar mais leve. Isso pode ser feito no GIMP ou Photoshop (CSS diminui o tamano da imagem, não do arquivo).
+
+Se no seu site, o usuário precisa fazer uma rolagem lateral para ver imagem, principalmente em um dispositivo móvel, ele vai ficar cansado e querer ir embora. Isso irá aumentar a sua taxa de "bounce rate", que é a taxa de reprovação do Google. Com um alto "bounce rate", o Google não irá tanto recomendar seu site.
+Sempre pense no usuário em primeiro lugar.

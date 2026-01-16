@@ -1,0 +1,8 @@
+Medidas de tamanho:
+
+Kilo - Kilobyte - Megabyte -  Gigabyte - Terabyte
+
+Melhor formato de compactação de imagem é o JPEG. 
+O PNG permiti transparência no fundo da imagem, tem mais qualidade e se quiser dar zoom na imagem, ela não vai ficar distorcida. 
+
+VERFICAR O PESO DA IMAGEM NO SITE! - Isso pode ser prejudicial para um cliente com internet lenta ou dispositivo ruim. Sem contar que, se seu site ficar lento por conta das imagens, o Google (site de buscas), não vai priozar seu site quando o usuário for pesquisar.

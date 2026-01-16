@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        /*Você consegue mudar a característica de um box-level ou um inline-level colocando a característica "dispçlay" e mudando para o contrário do que o elemento é (block ou inline). 
+
+        Você também consegue colocar um "display: inline block". Nesse modo, o elemento vai continuar sendo inline mas poderá conter características de block, por exemplo: tamanho, aktura, largura. */
+
+        h1 { /*box-level*/
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+
+            border-width:  10px;
+            border-style: solid;
+            border-color: darkslategrey;
+            /* shorthand =  border: 10px solid darkslategrey;*/
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            /* shorthand = o padding vai no sentido horário. 
+
+            Se as medidas de todos os lados forem iguais, você pode colocar só uma vez. 
+            Exemplo: "padding: 10px;".
+
+            Se você só colocar duas medidas, a primeira medida vai ser dada para o top e bottom e asegunda medida para a right e left.
+            Exemplo: "padding: 10px 20px;"
+            
+            Eu também consigo colocar as medidas "auto".
+            Exemplo: "padding: 10px auto 10px auto;".
+            */
+
+            margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 40px;
+            margin-left: 20px;
+            /* shorthand = o margin funciona no mesmo esquema do padding.
+            */
+
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: salmon;
+            /* o shorthand do outline vai na ordem da configuração acima. 
+            Exemplo: "outline: 5px dashed salmon;". */
+
+            /*O limite do outline é a margem. Ele pode até estravazar a margem, mas ele é um tracejado que fica dentro da margem. */
+        }
+
+        /* Se você quiser configurar uma caixa para ficar no meio, não fique mudando a medida da sua margem na direita ou na esquerda, pois o navegador do cliente pode ser maior e aí vai dar errado. Você pode colocar "margin: auto;", essa característica vai deixar a caixa horizontalmente no centro. */
+
+        /* Quando você for falar de alguma propriedade com top, right, bottom e left, faça as configurações exatamente nessa ordem, no sentido horário. */
+
+        a { /*inline-level*/
+            display: block;
+            
+            border-width: 10px;
+            border-style: solid;
+            border-top-color: red;
+            border-bottom-color: green;
+            border-right-color: orange;
+            border-left-color: blue;
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona?</p>
+</body>
+</html>

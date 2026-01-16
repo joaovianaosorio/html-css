@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="coracao.ico" type="image/x-icon">
+    <title>Videos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmentes.</h1>
+
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+
+    <!--Os formatos de vídeos que os navegadores são mais compatíveis são: MP4, MKV, OGV e WEBM. 
+    SEMPRE coloque todos, pois pode ser que um navegador aceite um mas não aceite outro.-->
+
+    <!--HOSPENDANDO VÍDEOS EM SEU PRÓPRIO SITE É UMA FORMA CARA DE COLOCAR VÍDEOS.-->
+    <video controls width="500px" poster="imagens/bike3.jpg">
+
+        <!--Nos sources, sempre preze pelo arquivo mais leve (veja se ele tem alta qualidade também), pois se muitas pessoas vistarem seu site, e os vídeos estão hospedados nele, isso pode ficar muito caro.-->
+
+        <source src="midia/meu-video1.mp4" type="video/mp4">
+        <source src="midia/meu-video1.mkv" type="video/mkv">
+        <source src="midia/meu-video1.webm" type="video/webm">
+        <source src="midia/meu-video1.ogv" type="video/ogg">
+
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos. <a href="midia/meu-video1.mp4">Clique aqui para baixar o vídeo.</a></p>
+    </video>
+
+    <!--É excelente usar o Youtube para o site. O YouTube é o segundo maior meio de pesquisas que tem, somente atrás do Google, isso faz com que a abragência que o algoritmo do Google vai dar para a vsiualização do seu site é maior. Sem contar que o YouTube é do Google.
+    Por isso é bom você criar seu próprio canal do YouTube. O MKV é o formato mais recomendável para a plataforma.-->
+
+    <!--Porém, o YouTube não consegue fazer com que só as pessoas que acessam seu site possam ver seus vídeos. O que pode fazer com que as pessoas possam incorporar seu vídeo e piratear ele. Deixar o vídeo como não listável não vai fazer com que o usuário não tenha acesso, só com que ele não tenha acesso a busca do YouTube.
+    O Vimeo é tipo o YouTube e permite que você possa deixar os vídeos livres ou privados.
+    Vantagens e desvantagens do Vimeo:
+    Vantagens - a qualidade de vídeo.
+    Devantagens - o algoritmo dele não é tão bom.
+    No Vimeo, você precisa pagar para usar. Ele não sugere vídeos quando você pausa também. Você tem vídeos limitados para subir, porém o consumo mensal é ilimitado.-->
+
+    <h1>Inserindo vídeos do YouTube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <h1>Inserindo vídeos do Vimeo</h1>
+
+    <iframe src="https://player.vimeo.com/video/783453912?h=b9260604e5&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    
+</body>
+</html>

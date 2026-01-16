@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="coracao.ico" type="image/x-icon">
+    <title>Outras formatações</title>
+</head>
+<body>
+    <h1>Outras formatações</h1>
+    <h2>Código-fonte</h2>
+    <p>O comando <code>document.getElementyById('teste')</code> é escrito em linguagem JavaScript.</p>
+    <!--Code: fonte monoespaçada para códigos-->
+    <pre>
+        <code>
+        num = int(input('Digite um número'))
+        if num % 2 == 0:
+            print (f' O número (num) é PAR')
+        else:
+                print (f' O número (num) é IMPAR')
+        print ('Fim do programa')
+        </code>
+    </pre>
+    <!--Pre: considera os espaçamentos código HTML.
+    Shift + Tab = volta espaçamento.
+    Tab = espaçamento.-->
+    <h2>Citações</h2>
+    <p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido</q>.</p>
+    <!--Usar a tag Q invés de colocar aspas, pois aí vc dá sentido a citação. Q = quote-->
+    <h2>Citações completas</h2>
+    <p>Segundo João Vitor Osório, no seu perfil do Instagram: </p>
+    <blockquote cite="https://www.instagram.com/jvosorio_/">
+        <!--Cite: colocar a refência da citação citada. Google e mecanismos de busca vão saber sobre o dono da frase-->
+        O amanhã é tarde demais
+    </blockquote>
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="Hiper Text Marcape Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>, estou adorando</p>
+    <h2>Texto Invertido</h2>
+    <p><bdo dir="rtl">Além de burro é curioso</bdo> 
+    <br>
+    <bdo dir="ltr">Tente ler o que está acima</bdo></p>
+</body>
+</html>

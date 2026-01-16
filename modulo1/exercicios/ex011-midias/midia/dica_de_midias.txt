@@ -1,0 +1,2 @@
+Em todos os tipos de mídia (imagens, áudios, vídeos, etc) preze por tamanho do arquivo e não qualidade. O full-quality vai deixar seu site mais lento. Qualidade de mídia é para download e não navegação. Busque arquivos leves com a qualidade razoável. 
+Também tome cuidado com os direitos autorais de imagens, sons, vídeos e conteúdos.

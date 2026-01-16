@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        /* Na criação de sombras você não precisa exagerar e deixar muito evidente para seu usuário que tem sombra ali. O cerébro percebe, mesmo esquema sobre as cores. 
+        As sombras já funcionam com uma shorthand. */
+
+        /*A tag <p> tem uma margem automática de 16px. */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+
+        header {
+            padding: 10px;
+            background-color: white;
+            margin: 10px;
+        }
+
+        main {
+            padding: 10px;
+            background-color: white;
+            margin: 10px;
+            border-radius: 0px 20px; /*Raio da borda. Essa característica muda a vértice da borda da div. */
+
+            /*Se você colocar duas medidas, a primeira vai indicar o top-left e bottom-right, a segunda, vai indicar o top-right e bottom-left. Exemplo: "border-radius: 10px 40px;". Se você colocar uma medida só, ela vai para todas as vértices. */
+            box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.548);
+        }
+
+        nav {
+            background-color: rgb(116, 116, 116);
+            padding: 3px;
+            box-shadow: 2px 2px 4px black;
+            /*Deslocamento horizontal, deslocamento vertical, espalhamento e sombra. Não precisa decorar essa ordem de características, sempre coloque "box-shadow: 1px 1px 1px black;" e depois configure. */
+
+            /*Você pode editar sua sombra pelo DevTools. */
+
+            /* Só existe sombra preta. Ela só pode mudar a transparência de acordo com a luz. Você pode mudar a transparência da cor clicando no quadradinho na frente do black. Mude ela de metade para baixo, se for do seu querer deixar transparente. */
+
+            /*Tem como colocar sombra interna.*/
+        }
+
+        h1 {
+            box-shadow:  inset 2px 1px 14px 6px rgba(0, 0, 0, 0.575);
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 20px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        article {
+            background-color: lightgray;
+        }
+
+        article > aside {
+            background-color: rgb(167, 167, 167);
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px 0px 10px 0px;
+        }
+
+        main > section#assuntos > p {
+            background-color: lightblue;
+        }
+
+        #bola {
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            border-radius: 50%;
+            display: block;
+           margin: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- As divs e spans ainda podem ser utilizados, não são tags obsoletas. Porém, existe algumas outras grouping tags que podem ser utilizadas e são semânticas, e são muito melhores para organizar o site. 
+
+    Os mecanismos de buscas e navegadores conseguem valorizar mais seu conteúdo principal utilizando essas "divs".
+
+    Tags semânticas também auxiliam na acessibilidade (pessoas com limitações visuais por exemplo e que utilizam leitores de tela, podem navegar pelo site mais facilmente).
+
+    ESSES ELEMENTOS SÃO CAIXAS! -->
+
+    <!-- Você pode colocar qualquer grouping tag dentro de qualquer grouping tag. -->
+
+    <header> 
+    <!-- Header significa cabeçalho. Ele é uma div. -->
+
+        <h1>Meu site</h1>
+        <nav>
+            <!-- Nav significa menu. Ele é uma div.-->
+
+            <a href="">Link</a>
+            <a href="">Link</a>
+            <a href="">Link</a>
+            <a href="">Link</a>
+            <a href="">Link</a>
+        </nav>
+    </header>
+    <main>
+    <!-- Main indica o conteúdo principal. Ele é uma div. -->
+
+        <section id="assuntos"> <!--Section = seção-->
+            <p> Esportes Política Tecnologia </p>
+        </section>
+        <section id="noticias">
+            <article> <!--Article = artigo-->
+            <!-- Não é obrigatório utilizar o article dentro do section, pode ser vice-versa. Inclusive, você pode colocar as grouping tagas onde e dentro do que quiser.  -->
+
+                <h2> Notícia sobre o Brasil </h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus quibusdam omnis nisi qui optio accusamus, ipsum error ullam voluptatem rerum voluptates rem tempora esse iusto molestiae saepe vitae ipsam a.</p>
+
+                <aside> <!-- Aside é um conteúdo periférico do artigo, um conteúdo relativo a ele. Não se trata do conteúdo que rpincipal que está sendo falado na sua página. -->
+
+                    <p> Artigo escrito por José da Silva. </p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <!-- Footer significa rodapé. Ele é uma div. -->
+        <p> Desenvolvido por CursoemVideo </p>
+    </footer>
+
+    <div id="bola">
+    </div>
+</body>
+</html>

@@ -1,0 +1,14 @@
+Planejando o Site
+
+Devemos planejar o site com essas 3 coisas:
+- layout
+- cores
+- imagens
+
+O planejamento pode demorar bastante e até ser chato, mas ele é ESSENCIAL para a criação de um site, NÃO PULE ESSA PARTE!
+
+Você pode acessar o "MockFlow" (https://mockflow.com/) para bolar seu layout. Minha conta no MockFlow: joaovianaosorio@gmail.com // Josorio44.
+
+Você pode criar sua paleta de cores no Adobe Color.
+
+A tipografia que vai ser utilizada você pode ver nos sites que já foram indicados antigamente. A fonte que será utilizada no Site Android é a Bebas Neue, e pode ser encontrada no Google Fonts. Outra fonte que vai ser utilizada é a IDroid e ela pode ser encontrada no site Dafont.

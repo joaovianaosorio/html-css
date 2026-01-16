@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+/*
+    No HTML é id = No CSS é #. (só pode por um elemento)
+    No HTML é class = No CSS é. (pode vários elementos)
+*/
+
+body {
+    background-color: rgb(176, 240, 190);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color:rgb(1, 88, 20)
+}
+
+h1#principal {
+    text-align: center;
+}
+/*Não é necessário colocar o nome da tag antes do id, como no exemplo: h1#principal. Mas fica mais fácil de você identificar o que aquele id representa.*/
+
+h2 {
+    color:rgb(17, 48, 23)
+}
+
+.basico {
+    color: green;
+}
+/* No class, não é usado a tag antes do item que indica a class no CSS (.) */
+
+.intermediario {
+    color: rgb(255, 251, 0);
+    text-shadow: 1px 1px 1px black;
+}
+
+.avancado {
+    color: rgb(241, 53, 53);
+}
+
+.destaque {
+    background-color: rgb(83, 240, 122);
+}

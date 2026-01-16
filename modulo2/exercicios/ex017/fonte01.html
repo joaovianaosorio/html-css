@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); 
+
+        body {
+            font-family: 'Work Sans', Arial, Helvetica, sans-serif; 
+            /*O "Courier New" tem que estar entre aspas pois é composto por duas palavras.*/
+            /*Arial, Verdana, Helvetica: fontes parecidas sem serifa.*/
+
+            /*Quando o Visual Studio oferece opções como "Arial, Helvetica, sans-serif", não quer dizer que o navegador vai usar as 3. O navegador vai pegar a primeira fonte; no caso dela não rodar, ele vai pegar a próxima. SEMPRE deixe por última opção uma fonte genérica, exemplo: sans-serif.*/
+
+            /*Você pode colocar a fonte de forma genérica e deixar com que o navegador escolha qual ele vai usar. O bom dessa tática é que todo navegador tem as formas. Exemplo: "font family: sans-serif" ou "font family: serif" ou "font family: monospace". */
+
+            font-size: 1em;
+            /*
+            Medidas Absolutas
+            - As medidas absolutas não são tão recomendadas de serem usadas, pois cada tela em que você abra o site pode ter um tamanho diferente. As medidas absolutas são as seguintes:
+            cm, mm, in (polegada), pt, px, pc (paica).
+            
+            Medidas Relativas
+            em - fonte que pega como parâmetro a altura do "M" maiúsculo;
+            ex - onte que pega como parâmetro a altura X;
+            rem;
+            vw - porcentagem da largura da viewport;
+            vh - porcentagem da altura da viewport
+            */
+
+            /*É recomendado, no font-size, utilizar o "em" e o "px".*/
+
+            /*Tamanho da letra do site sem alterção = 16px. 
+            Geralmente 16px = 1em. */
+
+            font-weight: normal;
+            /*Weight = peso
+            width = largura
+            height = altura */
+
+            /*O font-weight pode ser escrito como: light; normal; bold; bolder.
+            Ele também pode ser escrito de: 100 até 900. 
+            
+            ENTRETANTO, nem todas as fontes tem todas as variações.*/
+
+            font-style: italic;
+            /*Nem todas as fontes tem todos os estilos. */
+
+            text-decoration: underline;
+            /*Nem todas as fontes tem todos os estilos. */
+        }
+
+        h1 {
+            /* shorthand font (mãozinha na fonte)
+            font-style -> font-weight -> font-size -> font-family
+
+            font-family: 'Work Sans', sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+            */
+            
+            /*Não existe shorthand pra tudo, mas existe vários "shorthands" que podem te auxiliar no HTML.*/
+
+            font: italic bolder 3em 'Work Sans', sans-serif;
+        }
+
+        h2 {
+            font: bold 2em 'Work Sans';
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti corporis similique voluptatem illo! Repellendus, dolore iste. Veritatis modi rerum assumenda porro eaque dignissimos sint, totam rem eum officia aspernatur id. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae libero aliquid qui provident necessitatibus non possimus praesentium mollitia delectus tempora temporibus repellendus vero, aspernatur, assumenda quidem quod nobis obcaecati cumque. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque deserunt nesciunt cumque impedit ducimus earum sint inventore, debitis aliquam facilis similique laborum necessitatibus odio magni suscipit! Sunt natus dolorem assumenda.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam voluptatem temporibus facere quod aperiam officiis soluta eius ipsum laudantium laborum quasi, quos maxime fuga ipsa illo eveniet dolorem, aliquid molestias.</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus quos ex iste quaerat exercitationem voluptatibus consectetur quod provident, consequuntur sapiente! Deserunt quos incidunt maxime ipsam nesciunt reiciendis eveniet, aut tempora.</p>
+</body>
+</html>

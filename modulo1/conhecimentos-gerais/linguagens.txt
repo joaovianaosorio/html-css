@@ -1,0 +1,17 @@
+Capítulo 3 
+
+HTML - conteúdo.
+CSS - design.
+JavaScript - interação.
+
+Front-ed (client-side)
+
+São tecnologias que vão rodar do lado do cliente, em que o navegador executa para ele. São tecnologias que não vão funcionar no servidor, mas no navegador do usuário, como: HTML, CSS e JavaScript. O programador front-end está mais focado na experiência e interatividade do usuário com o site.
+
+Back-end (server-side)
+
+São tecnologias que funcionam no servidor. O programador back-end está mais focado na interação do código dele com o servidor, com as tecnologias desenvolvidas na tecnologia de server-side. Exemplos de linguagem: PHP, JavaScript (uma tecnologia diferente), Python, Java, Ruby, etc.
+
+Desenvolvedor Full Stack = Front-end + Back-end
+
+
