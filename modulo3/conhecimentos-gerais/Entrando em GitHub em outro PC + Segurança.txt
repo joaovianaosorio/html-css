@@ -1,0 +1,23 @@
+Entrando em GitHub em outro PC
+
+Primeiramente, você deve ter o Visual Studio Code, Git e GitHub instalado.
+
+1 - Entre no GitHub, vai em file > options e faça login. No momento que você fazer login, seus repositórios aparecerão.
+
+2 - Clique em files > options > Git. Vai aparecer seu nome e seu email temporário. Clique neles SEM AUTERÁ-LOS e clique em save.
+
+3 - Clone e baixe o repositório que você utilizará.
+
+4 - Com o repositório selecionado, você consegue abri-lo no Visual Studio Code e criar pastas e arquivos. Voltando ao GitHub, aparece as mudanças que você fez no repositório. Não esqueça de comitar e CLICAR EM PUSH para mandar suas mudanças para web. Se você não clicar em PUSH, apenas estará salvo na máquina em que você está utilizando.
+
+5 - Confirme na sua conta do GitHub na web se deu certo.
+
+6 - Após esses passos, devemos sair sem deixar rastros. Para isso, a primeira coisa a ser feita é fechar tudo menos o GitHub Desktop. Depois de fechar tudo, vai no repositório no GitHub Desktop, clique em repositor > remove > selecione remove to recycle bin também (esse comando é para enviar para a lixeira). Esse processo faz com que as pastas que você acabou criando na máquina também sejam apagadas.
+
+7 - Vá no GitHub Desktop > file > options >account > sign out.
+
+8 - Vá no GitHub Desktop > file > options > git e apague o nome, o email e salve.
+
+9 - Esvazie a lixeira.
+
+Dica para deixar sua conta do GitHub mais segura: https://www.youtube.com/watch?v=bsI6P_IM_hg&list=PLHz_AreHm4dm7ZULPAmadvNhH6vk9oNZA&index=11
