@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- É de extrema importância que você configure a cor de fundo, mesmo que tenha uma imagem. Porque primeiro o site carrega o conteúdo e logo depois os demais. Sendo assim, o site primeiro vai carregar o texto e depois as imagens, fazendo com que seja ideal que você não deixe o site branco, pois vai carregar esse branco primeiro. -->
+    <style>
+        body{
+            height: 100vh;
+            background-color: black;
+            background-image: url(imagens/wallpaper002.jpg);
+            background-position: center top;
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* No background-size, nós podemos usar o "100%" ou "100% 100%" que da 100% de altura e largura. Entretanto, essa não é a melhor maneira pois a imagem vai se achatando, ficando visualmente feio.
+            Nós também temos o "background-size: contain;", que te dá a ordem de você mostrar a imagem 100% exibida, sem nenhum corte. 
+            O "background-size: cover;", que é o que utilizamos, ele deixa a imagem cobrindo toda a tela nem que ele tenha que cortá-la, mas ele não a achata.
+            Por padrão, o background-size é auto. */
+        }
+
+        main{
+            background-color: white;
+            width: 400px;
+            padding: 10px;
+            margin: auto;
+            border: 1px solid darkblue;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Teste de Imagem de Fundo</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur voluptas nobis quis alias porro dolorum ex impedit distinctio pariatur. Sit natus error ea sed architecto necessitatibus quas nihil eaque dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus veniam id quae nihil? Facere molestiae ducimus totam dolorum inventore id ullam aliquam! Suscipit quod esse accusantium vitae id, deleniti itaque. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis provident nesciunt doloremque rem modi, libero esse, delectus magni saepe, voluptas quam expedita facere ea dolor amet hic non beatae voluptatum.</p>
+    </main>
+</body>
+</html>
