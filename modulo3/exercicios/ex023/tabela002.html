@@ -12,6 +12,7 @@
         table{
             width: 400px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th{
@@ -26,6 +27,18 @@
             background-color: lightgray;
         }
 
+        tbody > tr:nth-child(2n) { /* de duas em duas ele coloca o que você pediu*/
+            /*
+                OUTRAS OPÇÕES:
+                nth-child(2n-1) - ímpar
+                nth-child(odd) - ímpar
+                nth-child(even) - par
+                nth-child(2n) - par
+            */
+            background-color: blue;
+            color: white;
+        }
+
         th.pop{
             width: 50px;
         }
@@ -35,8 +48,18 @@
             color: white;
         }
 
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
         td.num{
             text-align: right;
+        }
+
+        p{
+            font-size: 20px;
         }
     </style>
 </head>
@@ -64,23 +87,125 @@
         <tbody>
             <tr>
                 <td>São Paulo</td>
-                <td class="num">45 919 049</td>
+                <td class="num">44.411.238</td>
             </tr>
             <tr>
                 <td>Minas Gerais</td>
-                <td class="num">21 168 791</td>
+                <td class="num">20.538.718</td>
             </tr>
             <tr>
                 <td>Rio de Janeiro</td>
-                <td class="num">17 264 943</td>
+                <td class="num">16.054.524</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14.141.626</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11.444.380</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">10.882.965</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9.058.931</td>
+            </tr>
+            <tr>            
+                <td>Ceará</td>
+                <td class="num">8.794.957</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8.121.025</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7.610.361</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">7.056.495</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">6.775.805</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td class="num">3.974.687</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">3.941.613</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td class="num">3.833.712</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="num">3.658.649</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="num">3.302.729</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td class="num">3.272.199</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td class="num">3.127.683</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="num">2.817.381</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso do Sul</td>
+                <td class="num">2.757.013</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td class="num">2.209.558</td>
+            </tr>
+            <tr>
+                <td>Rondônia</td>
+                <td class="num">1.581.196</td>
+            </tr>
+            <tr>
+                <td>Tocantins</td>
+                <td class="num">1.511.460</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="num">830.018</td>
+            </tr>
+            <tr>
+                <td>Amapá</td>
+                <td class="num">733.759</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="num">636.707</td>
             </tr>
         </tbody>
         <tfoot> <!--Se vc colocar o tfoot embaixo do thead como lá em cima, ele ainda vai aparecer embaixo da tabela. Isso é semântica!-->
             <tr>
                 <th scope="row">Total de Habitantes dos 3 Estados</th>
-                <td class="num"><strong>84.352.783</strong></td> 
+                <td class="num"><strong>213.421.037</strong></td> 
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum maiores cum officiis? Quibusdam, harum! Placeat atque dolorem unde illo quisquam nihil molestias ducimus quae. Ducimus at impedit fugiat atque enim! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio fuga tenetur vitae quia nostrum natus reiciendis aut dolorem, cumque harum nesciunt assumenda, iste magnam animi veritatis in quo hic! Quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et omnis mollitia molestiae, rem excepturi ratione eligendi animi sed eum illum, unde adipisci officiis aspernatur amet veritatis enim soluta. Exercitationem, distinctio? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad adipisci beatae, tempore eum exercitationem aperiam debitis. Eveniet quia ipsum quaerat eum animi ut libero corporis, voluptatem autem, commodi doloremque ea?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum maiores cum officiis? Quibusdam, harum! Placeat atque dolorem unde illo quisquam nihil molestias ducimus quae. Ducimus at impedit fugiat atque enim! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio fuga tenetur vitae quia nostrum natus reiciendis aut dolorem, cumque harum nesciunt assumenda, iste magnam animi veritatis in quo hic! Quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et omnis mollitia molestiae, rem excepturi ratione eligendi animi sed eum illum, unde adipisci officiis aspernatur amet veritatis enim soluta. Exercitationem, distinctio? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad adipisci beatae, tempore eum exercitationem aperiam debitis. Eveniet quia ipsum quaerat eum animi ut libero corporis, voluptatem autem, commodi doloremque ea?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum maiores cum officiis? Quibusdam, harum! Placeat atque dolorem unde illo quisquam nihil molestias ducimus quae. Ducimus at impedit fugiat atque enim! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio fuga tenetur vitae quia nostrum natus reiciendis aut dolorem, cumque harum nesciunt assumenda, iste magnam animi veritatis in quo hic! Quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et omnis mollitia molestiae, rem excepturi ratione eligendi animi sed eum illum, unde adipisci officiis aspernatur amet veritatis enim soluta. Exercitationem, distinctio? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad adipisci beatae, tempore eum exercitationem aperiam debitis. Eveniet quia ipsum quaerat eum animi ut libero corporis, voluptatem autem, commodi doloremque ea?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum maiores cum officiis? Quibusdam, harum! Placeat atque dolorem unde illo quisquam nihil molestias ducimus quae. Ducimus at impedit fugiat atque enim! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio fuga tenetur vitae quia nostrum natus reiciendis aut dolorem, cumque harum nesciunt assumenda, iste magnam animi veritatis in quo hic! Quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et omnis mollitia molestiae, rem excepturi ratione eligendi animi sed eum illum, unde adipisci officiis aspernatur amet veritatis enim soluta. Exercitationem, distinctio? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad adipisci beatae, tempore eum exercitationem aperiam debitis. Eveniet quia ipsum quaerat eum animi ut libero corporis, voluptatem autem, commodi doloremque ea?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum maiores cum officiis? Quibusdam, harum! Placeat atque dolorem unde illo quisquam nihil molestias ducimus quae. Ducimus at impedit fugiat atque enim! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio fuga tenetur vitae quia nostrum natus reiciendis aut dolorem, cumque harum nesciunt assumenda, iste magnam animi veritatis in quo hic! Quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et omnis mollitia molestiae, rem excepturi ratione eligendi animi sed eum illum, unde adipisci officiis aspernatur amet veritatis enim soluta. Exercitationem, distinctio? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad adipisci beatae, tempore eum exercitationem aperiam debitis. Eveniet quia ipsum quaerat eum animi ut libero corporis, voluptatem autem, commodi doloremque ea?</p>
+    
 </body>
 </html>
