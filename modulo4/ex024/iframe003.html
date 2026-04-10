@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe#tela{
+            width: 95vw;
+            height: 400px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti voluptatum cum, nemo distinctio recusandae consequuntur debitis culpa quos, doloremque quas et modi ratione dolorum totam! Quae ad repellat laboriosam veritatis?</p>
+
+    <ul>
+        <li><a href="paginas-extras/pag001.html" target="frame">Primeira página</a></li>
+        <li><a href="paginas-extras/pag002.html" target="frame">Segunda página</a></li>
+        <li><a href="paginas-extras/pag003.html" target="frame">Terceira página</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas qui autem veritatis dolore minus voluptatibus adipisci, delectus, fuga labore nostrum eos sit. Vero ducimus delectus tempora facere officia fuga ipsa.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, totam? Laboriosam facere neque reprehenderit optio cum, officia architecto ducimus impedit nihil soluta expedita modi voluptatibus id ipsum, beatae quisquam fugit!</p>
+
+    <iframe srcdoc="<h1>Escolha uma das opções acima</h1> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit amet, cum officia ratione voluptatum libero omnis exercitationem, corrupti dolores similique explicabo error ducimus fuga ipsa nisi necessitatibus ea totam distinctio?</p><img src='imagens/curso.jpg' width='300px' height='300px'>" frameborder="1" id="tela" name="frame">
+        <p>Infelizmente seu navegador não é compatível.</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, aliquid voluptate vel nihil totam facilis perferendis! Harum, accusantium soluta? Unde quas quae beatae expedita corrupti quibusdam amet ipsum soluta praesentium.</p>
+</body>
+</html>

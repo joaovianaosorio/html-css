@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframes</title>
+</head>
+<body>
+    <h1>Meu site principal</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora consequuntur sed corrupti, qui, id itaque in distinctio quis exercitationem, inventore unde ipsa accusantium ex minus? Iste veniam facere nemo voluptatum.</p>
+    <iframe src="paginas-extras/pag004.html" sandbox="sandbox"  referrerpolicy="no-referer" frameborder="1">Seu navegador não é compatível com isso...</iframe>
+    <!-- 
+    O "sandbox='sandbox'" bloqueia todo e qualquer acesso que outros sites, que estejam dentro do iframe, tentem fazer, tipo o cadastro de pessoas. Com esse atributo, vc protege mais o seu site em relação a ataques e você protege ao máximo.
+    Se vc quiser que no site em que vc está colocando o iframe possa ser possível colocar o formulário e alguns outros componentes, vc pode configurar o sandbox de outra forma, porém não terá proteção máxima. A configuração, nesse caso, é: "sandbox='allow-same-origin allow-forms allow-scripts'.
+    O "allow-same-origin" permite conteúdo de mesma origem; o "allow-forms" permite formulário e o "allow-scripts" permite scripts.
+
+    Temos outro atributo para deixar seu iframe mais seguro também, ele é o "referrerpolicy". Por padrão, ele caracterizado por "referrerpolicy='no-referrer-when-downgrade'", ou seja, não precisa colocar isso. 
+    Você pode trocá-lo por "referrerpolicy='no-referer'", que faz com  que o conteúdo que está dentro do iframe não seja coletado do usuário, fazendo com que propagandas de outras empresas não apareçam para ele.
+    -->
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur amet qui assumenda consequuntur quod iusto exercitationem, fuga ipsam ea reiciendis! Ut ipsum, saepe labore cupiditate architecto deleniti doloribus. Quas, vero.</p>
+</body>
+</html>

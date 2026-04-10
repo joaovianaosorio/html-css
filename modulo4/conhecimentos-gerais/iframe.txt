@@ -1,0 +1,17 @@
+Iframe
+
+Não confunda iframe com frame. Frame nós não utilizamos tanto no HTML, mas iframe sim.
+
+Existem os GoogleBots que vão vasculhando os sites e colocando os sites em ordem de acordo com a relevância do site.
+
+Quando nós pesquisamos algo no Google, primeiramente aparece os links que são anúncios, ou seja, de pessoas ou empresas que pagaram para estar ali em cima, sendo denominadas conteúdo pago. As páginas que merecem estar lá são de conteúdo orgânico, ou seja, utiliza tecnologias e conteúdos relevantes para estar lá.
+
+Existem problemas para que os GoogleBots consigam indexar conteúdos em iframes. Sendo assim, você deve tomar muito cuidado e não colocar algo essencial do seu site em iframes, para que os GoogleBots possam ver e dar a devida relevância para aquele conteúdo. Não é garantido que os GoogleBots não conseguirão indexar esse conteúdo, mas pode ser que isso aconteça, por isso, tal medida deve ser tomada.
+
+Os iframes também não são convenientes em questão de acessibilidade. Por exemplo, pessoas cegas podem acessar o conteúdo de um site por meio de leitores de telas, e, estes, têm problemas para acessar os iframes. Além disso, também há problemas de usabilidade, que são aqueles que o próprio navegador se confunde ou o usuário se confunde. 
+
+Por exemplo, vamos supor que você esteja navegando dentro de um site no iframe e acessa uma outra página que não é aquela inicial que está contida no iframe. Se você tentar voltar, vc só irá conseguir voltar pelo botão de "voltar" do site principal. Sendo assim, o navegador pode apresentar algum problema em descobrir se vc quer voltar para a página anterior do site contido no iframe ou do site que contém o iframe.
+
+Se o site que vc colocar no iframe também não for responsivo, pode apresentar um problema. 
+
+Os iframes também abrem uma porta para outro site dentro do seu site, o que pode atrapalhar a segurança indiretamente do seu site. Por exemplo, se o site que vc colocou no iframe está sendo hackeado e informações dos usuários estão sendo pegas, pode ser que isso aconteça com os usuários do seu site também.
