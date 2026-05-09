@@ -16,7 +16,17 @@
         <!--
         O "autocomplete='off'" é para desligar qualquer sugestão de preenchimento do formulário.
 
-        Não existe ligação entre a palavra nome abaixo (dentro da tag <p>) e input (tipo text) de nome.
+        Escrever "GET" ou "get", na parte de "method", em HTML não tem diferença nenhuma, mas em php tem.
+
+        O método (method) que fica nos formulários por padrão, sem você especificar, é o GET. O ruim, é que os dados que o usuário colocará ficará na ferramenta de pesquisa ao enviar. O método (method) "POST", não deixa os dados visíveis na URL, mas a gente consegue ver no DevTools, pela parte "Network". Ou seja, o "POST", "protege" mais.
+
+        O método "GET" pode ser usada quando você não vai colocar nenhum dado importante da pessoa, como nome, sobrenome, idade e etc. A gente não pode usar o "GET" também para envio de fotos ouo tipos de arquivos, e que seu formulário faça esse envio. Já a senha, cpf, cep, é melhor usar o "POST".
+
+        Quando você vai enviar dados pelo "GET" ele só pode ter até 3 mil bytes, que é aproximadamente 3 mil letras.
+
+        !O IDEAL É VOCÊ TRABALHAR COM "HTTPS" PARA APRENDER A ESCONDER OS DADOS, EU DEVO ESTUDAR ISSO!-->
+
+        <!--Não existe ligação entre a palavra nome abaixo (dentro da tag <p>) e input (tipo text) de nome.
         Mas essa ligação é importante e para fazê-lá, nós usamos a tag <label>. Denrto do "for" da tag "label", nós precisamos colocar o nome do "id" ou nome do atributo "name" que está no input.
         NÃO SE FAZ FORMULÁRIO SEM O UTILIZO DE LABEL!
         -->
