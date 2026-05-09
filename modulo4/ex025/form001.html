@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+    <form action="cadastro.php" autocomplete="off">
+        <!--
+        O "autocomplete='off'" é para desligar qualquer sugestão de preenchimento do formulário.
+
+        Não existe ligação entre a palavra nome abaixo (dentro da tag <p>) e input (tipo text) de nome.
+        Mas essa ligação é importante e para fazê-lá, nós usamos a tag <label>. Denrto do "for" da tag "label", nós precisamos colocar o nome do "id" ou nome do atributo "name" que está no input.
+        NÃO SE FAZ FORMULÁRIO SEM O UTILIZO DE LABEL!
+        -->
+        <p><label for="inome">Nome:</label> 
+            <input type="text" name="nome" id="inome"></p>
+        <p><label for="isobrenome">Sobrenome: </label>
+            <input type="text" name="sobrenome" id="isobrenome"></p>
+        <p><input type="submit" value="Enviar"></p>
+
+        <!--
+        No php e HTML, todo input, todo objeto de entrada precisa de um nome (name).
+        No JS, o id é importante.
+        O botão de submissão (input:submit)
+        -->
+    </form>
+</body>
+</html>
