@@ -1,0 +1,5 @@
+Media Query
+
+Media Query -> Plural "Media Queries".
+Media Queries são recursos essenciais para um site responsivo, onde sua representação vai depender do dispositivo que ela for transmitida (celular, notebook, monitor, TV, impressora, etc).
+Os Media Queries são de CSS e não tem nada a ver com HTML.
