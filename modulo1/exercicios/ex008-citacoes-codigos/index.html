@@ -22,7 +22,20 @@
         print ('Fim do programa')
         </code>
     </pre>
-    <!--Pre: considera os espaçamentos código HTML.
+    <!--
+    Pre: considera os espaçamentos código HTML.
+    Quando usar <pre>?
+    - Exibir Blocos de Código: É o uso mais comum. Quase sempre usamos <pre> junto com a tag <code> para mostrar trechos de linguagens como C, Python ou JavaScript, mantendo a indentação correta.
+    - Arte ASCII: Se você quiser criar desenhos feitos com caracteres de texto.
+    - Logs de Sistema ou Poesia: Onde a quebra de linha específica faz parte da mensagem e não pode ser ignorada pelo navegador.
+    Porém, a tag <pre> não tem quebra de linha automática. Para resolver isso, podemos usar um CSS:
+    -  pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    } 
+    - Leitores de tela também podem ter dificuldades para interpretar o conteúdo usando o <pre>. Por isso, o use apenas para colocar códigos de outras linguagens.
+    
+
     Shift + Tab = volta espaçamento.
     Tab = espaçamento.-->
     <h2>Citações</h2>
@@ -34,11 +47,19 @@
         <!--Cite: colocar a refência da citação citada. Google e mecanismos de busca vão saber sobre o dono da frase-->
         O amanhã é tarde demais
     </blockquote>
+    <!--
+    Q -> é mais usado para uma citação pequena, poucas ou só uma linha.
+    Blockquote -> citação grande que merece seu próprio parágrafo.
+    O atributo "cite" pode ser usado em qualquer das duas tags citadas anteriormente.
+    -->
     <h2>Abreviações</h2>
     <p>Estou estudando <abbr title="Hiper Text Marcape Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>, estou adorando</p>
     <h2>Texto Invertido</h2>
     <p><bdo dir="rtl">Além de burro é curioso</bdo> 
     <br>
     <bdo dir="ltr">Tente ler o que está acima</bdo></p>
+    <!--
+    A tag <bdo> é fundamental quando você trabalha com sistemas que suportam idiomas que são lidos da direita para a esquerda (RTL - Right-to-Left), como o árabe ou o hebraico.
+    -->
 </body>
 </html>

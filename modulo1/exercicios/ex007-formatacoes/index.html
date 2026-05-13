@@ -14,10 +14,30 @@
     <h2>Itálico / Ênfase</h2>
     <p>Nesta frase, temos um <i>termo em itálico</i> usando a tag I (não semântica).</p>
     <p>Nesta frase, temos um <em>termo em ênfase</em> usando a tag EM (semântica).</p>
+
+    <!--
+    Para acessibilidade, isso é fundamental: leitores de tela para pessoas com deficiência visual costumam mudar a entonação da voz sintética quando encontram um <em>, mas ignoram o <i>.
+
+    I -> Quando usar: Termos técnicos, palavras em outros idiomas, nomes de embarcações, pensamentos ou termos taxonômicos.
+    Você deve usar <em> sempre que a ênfase mudar o entendimento da frase.
+    Exemplos:
+    - Com <i>: "O termo A2 refere-se ao tamanho do kimono de Jiu-Jitsu." (Aqui é apenas um termo técnico, o tom muda, mas não há "drama" ou urgência na palavra).
+
+    - Com <em>: "Você precisa entregar a documentação no campus do IFSP amanhã!" (Aqui a ênfase na palavra "precisa" é vital para o sentido da instrução).
+
+    -->
+
     <!--Procurar tag com parte selecionada: CTRL + SHIFT + P e selecionar "Wrap with Abbreviation" e escrever a tag que vc quer. OBS: faça isso quando vc precisar colocar uma frase, ou palavra, em uma tag.-->
     <h2>Texto marcado</h2>
     <p>Podemos criar também <mark style="background-color:lightgreen;">um texto marcado</mark> usando a tag MARK.</p>
     <p>Podemos criar também <mark >um texto marcado</mark> usando a tag MARK com sua cor original (amarelo).</p>
+    <!--
+    Resultados de Busca: Para destacar a palavra que o usuário pesquisou dentro de um texto longo.
+
+    Referência em Citações: Quando você cita um autor e quer destacar uma parte específica da fala dele que não estava destacada no original, mas que é importante para a sua análise.
+
+    Acompanhamento de Conteúdo: Para sinalizar ao usuário onde ele parou ou uma parte do texto que é relevante para a ação que ele está realizando no momento.
+    -->
     <h2>Texto grande e pequeno</h2>
     <p>Estamos criando um <big>texto grande</big> e um <small>texto pequeno</small> nesse parágrafo</p>
     <!--SMALL tem significado, BIG não, poe mais que ele seja obsoleto, ainda funciona. Existe documentos em que a pessoa tem que ler as letras pequenas (ex:contrato).-->
