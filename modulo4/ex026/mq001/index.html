@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link rel="stylesheet" href="estilos/style.css" media="screen"> 
+    <link rel="stylesheet" href="estilos/impressora.css" media="print">
+    <!--
+     o atributo "media" da tag link:css é p/ identificar em que tipo de mídia esse css vai ser utilizado.
+     exemplos: all, screen, print (impressora). Os exemplos anteriores são chamados de "media types".
+     Com essa configuração, nós já estamos usando Media Queries. Usamos duas medias, impressora e tela.
+
+     Quando falamos de "media screen" estamos falando de um tipo muito genérico de media, pois existem várias telas (celular, tablet, etc).
+     Não existe uma media para cada um, por isso nós usamos o "media features".
+     Media Query = Media Type + Media Feature 
+     Media Type -> tipo de mídia
+     Media Feature -> características de mídia
+     -->
+</head>
+<body>
+    <header>
+        <h1>Notícias</h1>
+        <menu>
+            <ul>
+                <li>Esportes</li>
+                <li>Política</li>
+                <li>Tecnologia</li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Estou aprendendo a criar Media Queries</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit ducimus dolorum hic provident iure itaque tenetur ut fuga animi neque iste incidunt, alias accusantium sunt ipsam. Magnam aspernatur libero ea.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda commodi unde veritatis debitis corrupti dolor esse! Fuga iusto laborum excepturi aut cupiditate! Sapiente ducimus harum officia ipsam nemo fugit saepe!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam expedita magni soluta atque nulla repellat dicta doloremque. Amet cumque quod eius quidem repellat atque, totam soluta quos accusamus veniam dolorem!</p>
+        </article>
+    </main>
+</body>
+</html>
