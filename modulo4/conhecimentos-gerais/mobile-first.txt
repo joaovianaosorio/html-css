@@ -1,0 +1,4 @@
+Mobile First
+
+Antigamente, as pessoas criavam o site para computador e depois criavam para mobile. Depois, começaram a pensar em fazer o contrário, "Mobile First".
+Desenvolver usando essa técnica traz vantagens como facilitar na divulgação do seu site. Outra vantagem é que, o algoritmo do Google, e outros algoritmos de busca, vai valorizar sites com o foco no "Mobile First". Essa técnica também vai melhorar a experiência do usuário. Muita gente que não tem acesso a Internet, ou dispositivos não muito bons, muita boa precisam que sites não pesem muit e carreguem rápido. Outra vantagem é o aumento de credibilidade com o usuário. A última vantagem é a performance, os sites móveis precisam ser mais leves.
