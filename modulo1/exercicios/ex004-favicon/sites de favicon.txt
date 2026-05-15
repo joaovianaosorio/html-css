@@ -4,3 +4,4 @@ Sites de Favicon:
 favicon.cc
 iconarchive
 favicon.io
+google icons: https://fonts.google.com/icons
