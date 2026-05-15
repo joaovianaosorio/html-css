@@ -8,6 +8,10 @@
     padding: 0px;
 }
 
+body{
+    background-color: rgb(207, 207, 207);
+}
+
 header{
     background-color: rgb(148, 148, 148);
 }
