@@ -1,0 +1,2 @@
+VH e VW
+A principal diferença entre vh e vw no CSS é a base de cálculo: vh (viewport height) baseia-se na altura da janela do navegador, enquanto vw (viewport width) baseia-se na largura. Ambas são unidades relativas (1 unidade = 1% da dimensão total), excelentes para layouts responsivos que se ajustam automaticamente ao tamanho da tela.

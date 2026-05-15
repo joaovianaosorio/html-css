@@ -2,6 +2,122 @@
 
 /*Todas as demais mídias*/
 
-@media print{
-    
+/*
+Typical Device Breakpoints
+-> larguras específicas de tela (medidas em pixels) usadas no design responsivo para alterar o layout de um site.
+---------------------------
+Pequenas telas: até 600px
+Celular: de 600px até 768px
+Tablet: 768px até 992px
+Desktop: 992px até 1200px
+Grandes telas: acima de 1200px
+*/
+
+@media print{ /* IMPRESSÃO */
+
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    body{
+      
+        /*
+        background-image: url(../imagens/back-print.jpg);
+        No papel, não tem como imprimir background-image, então o códgio acima seria desnecessário.
+
+        */
+
+        /*
+        O "background-color" também não funciona muito bem. Ele pode funcionar se você colocar as configurações abaixo, mas, ainda sim, o usuário terá que fazer algumas modificações nas configurações de impressão para que o navegador aceite uma cor de fundo. 
+        O motivo é que ninguém quer gastar muita tinta com coisas "desnecessárias" e que prejudicam sua visão na leitura.  
+
+        Força o navegador a renderizar as cores e imagens de fundo 
+        -webkit-print-color-adjust: exact; // Para Chrome, Safari e Edge 
+        print-color-adjust: exact;          // Padrão moderno (Firefox, etc.) 
+        background-color: yellow     !important; // O !important ajuda a garantir a aplicação 
+        */
+    }
+
+    body::after{
+        content: 'Essa impressão foi feita através do site www.cursoemvideo.com';
+        text-decoration: underline;
+    }
+
+    main{
+        width: 90vw;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact; 
+        background-image: url(../imagens/back-print.jpg) !important; /* O !important ajuda a garantir a aplicação */
+
+        /*
+        Quando uma configuração não quer ir, tente ser mais específicopara não ter falha. Por exemplo, se você colocar: 
+        "text-shadow: none;
+        color: black;"
+        no atributo "main", provavelmente a configuração vai falhar. Por isso, logo abaixo, nós especificamos que é no "h1" do "main", fazendo com que o navegador entenda e coloque de uma vez por todas nossa personalização.
+        */
+    }
+
+    main h1{
+        text-shadow: none;
+        color: black;
+    }
+
+    img#phone{display: none;}   
+    img#tablet{display: none;}
+    img#print{display: block;}
+    img#pc{display: none;}
+    img#tv{display: none;}
 }
+
+@media screen and (min-width: 768px) and (max-width: 992px){ /* TABLETS */
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    img#phone{display: none;}   
+    img#tablet{display: block;}
+    img#print{display: none;}
+    img#pc{display: none;}
+    img#tv{display: none;}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px){ /* DESKTOP */
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    img#phone{display: none;}   
+    img#tablet{display: none;}
+    img#print{display: none;}
+    img#pc{display: block;}
+    img#tv{display: none;}
+}
+
+@media screen and (min-width: 1200px){ /* GRANDES TELAS */
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    main{
+        width: 700px;
+    }
+
+    img#phone{display: none;}   
+    img#tablet{display: none;}
+    img#print{display: none;}
+    img#pc{display: none;}
+    img#tv{display: block;}
+}
+
+/*
+@media screen and (max-width:600px){ 
+    -> configurações para pequenas telas
+    }
+
+@media screen and (min-width: 600px) and (max-width: 768px){
+    -> configurações para celulares
+}
+
+Como as mídias acima já foram configuradas no arquivo "style.css", elas ficaram em branco aqui.
+Coloquei o comentário somente para demonstrar como ficaria se fosse fazer elas em um arquivo de CSS com as medias queries todas juntas.
+*/
