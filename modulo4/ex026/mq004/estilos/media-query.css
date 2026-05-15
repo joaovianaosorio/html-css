@@ -17,12 +17,9 @@ Grandes telas: acima de 1200px
 
     *{
         font-family: 'Courier New', Courier, monospace;
-    }
-
-    body{
-      
-        /*
-        background-image: url(../imagens/back-print.jpg);
+    } 
+        /* body{
+        background-image: url(../imagens/back-print.jpg);}
         No papel, não tem como imprimir background-image, então o códgio acima seria desnecessário.
 
         */
@@ -36,7 +33,6 @@ Grandes telas: acima de 1200px
         print-color-adjust: exact;          // Padrão moderno (Firefox, etc.) 
         background-color: yellow     !important; // O !important ajuda a garantir a aplicação 
         */
-    }
 
     body::after{
         content: 'Essa impressão foi feita através do site www.cursoemvideo.com';
