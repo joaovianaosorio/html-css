@@ -1,0 +1,48 @@
+Flexbox
+
+flexbox -> caixa flexível
+-> uma caixa pai que tem algumas caixas filhas. Essa caixa pai (container) vai conseguir fazer com que as filhas se comportem do tamanho da tela ou da janela. Ex: quebra de linha automática na diminuição da janela.
+-> o flexbox é unidimensional, ou seja, ou horizontal ou vertical.
+-> você deve ver se os navegadores são compatíveis com o flexbox (a maioria é).
+-> quando você vai mexer com flexbox, você deve ver quem é o pai (container ou contêiner). Ele irá receber a configuração "display: flex" e somente ele.
+-> as caixas filhas (itens ou flex-items) recebem outra atribuição.
+
+
+Configurações Contêiner (caixa pai):
+flex-direction (conteiner/pai)
+4 configurações permitidas para o flex-direction, são elas:
+	- row (linha/configuração padrão): uma linha, da esquerda p/ direita.
+	- row-reverse: uma linha, da direita p/ esquerda. Nele, o cross-axis é invertido (de baixo p/ cima) e o main-axis também (da direita p/ esquerda).
+	- column: uma coluna, de cima p/ baixo. O main-axis é de cima p/ baixo e o cross-axis da esquerda p/ direita.
+	- column-reverse: uma coluna, de baixo p/ cima. O main-axis é de baixo p/ cima e o cross-axis da esquerda p/ direita.
+eixos (axis)
+-> main-axi: eixo principal. Ele contém o main-start (início) e o main-end (final).
+-> cross-axis: eixo transversal. Ele contém o cross-start (início) e o cross-end (final).
+
+flex-wrap (empacotamento)
+o tamanho de um bloco vai depender do conteúdo que está dentro
+-> vai configurar  comportamento do contêiner.
+-> por padrão, o flex-wrap é "nowrap". Ele significa que os itens não quebrarão de linha.
+	- flex-wrap: wrap -> se você diminuir muito a janela, ele quebrará o item mais na direita p/ baixo, se o sentido do cross-axis estiver assim.
+	- flex-warp: wrap-reverse -> se você diminuir muito a janela, ele quebrará o item mais na direita p/ cima, se o sentido do cross-axis estiver p/ baixo. Ou seja, vai ao sentido contrário do cross-axis.
+NÃO TEM VAI PARA CIMA OU PARA BAIXO, TEM SENTIDO DO CROSS-AXIS OU SENTIDO CONTRÁRIO DO CROSS-AXIS.
+
+flex-flow = flex-direction + flex-wrap (shorthand)
+
+justify-content
+-> é o alinhamento do main-axis
+-> o primeiro valor do justify-content, que normalmente é usado, é o flex-start. Nesse atributo, o primeiro item fica grudado no main-start e o espaço livre fica no próximo ao main-end.
+-> outro valor do justify-content é o flex-end (justify-content: flex-end). Nesse atributo, o primeiro item fica grudado no main-end e o espaço livre fica no próximo ao main-start.
+-> justify-content: center - deixa os itens certinho no centro, respeitando sua orientação. Os espaços livres ficam separado com o mesmo tamanho de distância do main-start e do main-end.
+-> configurações de espaçamento do justify-content:
+	- justify-content: space-between - o primeiro item fica no main-start e o último ficará no main-end. Todos os outros itens ficarão no meio com o espaçamento igual.
+	- justify-content: space-evenly - coloca o mesmo espaçamento entre os elementos do contêiner, inclusive entre os elementos e o main-start e o main-end.
+	- justify-content: space-around - ele pegará o contêiner, separará os espaços dentro da caixa pai, abrangendo toda ela, dividindo a caixa em espaços iguais de acordo com o número de itens. Depois, centralizará esses itens dentro dos espaços preestabelecidos. 
+
+align-items
+-> alinhamento no sentido do cross-axis
+-> para entender melhor o align-items, é bom você aumentar o tamanho do seu contêiner.
+-> padrão do align-items: stretch. Esse atributo estica os elementos.
+-> align-items: flex-start - os itens ficam no início do eixo transversal (cross-start).
+-> align-items: flex-end - os itens ficam no final do eixo transversal (cross-end).
+-> align-items: center - os itens ficam no centro cross-axis.
