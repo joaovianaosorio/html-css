@@ -5,9 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modelo de Caixas</title>
     <style>
-        /*Você consegue mudar a característica de um box-level ou um inline-level colocando a característica "dispçlay" e mudando para o contrário do que o elemento é (block ou inline). 
+        /*
+        INLINE-LEVEL:
+        - display: inline
+            -> Comportamento: Eles não quebram linha. Se o texto acabar, o próximo elemento começa logo em seguida.
+            -> Restrições críticas: Você não pode definir width (largura) ou height (altura) para eles. Margens e paddings superiores/inferiores (top e bottom) também não funcionam corretamente (eles não empurram os outros elementos ao redor).
+            -> Exemplos comuns: <span>, <a>, <strong>, <em>.
+        - display: inline-block; (o melhor)
+            -> Comportamento: Fica um ao lado do outro na mesma linha (comportamento inline).
+            -> Vantagem: Você pode definir width, height, margin e padding livremente, e eles vão respeitar essas dimensões perfeitamente (comportamento block).
+            -> Exemplos de uso comuns: Botões, itens de menu de navegação horizontal, ou blocos de cards que precisam ficar lado a lado.
 
-        Você também consegue colocar um "display: inline block". Nesse modo, o elemento vai continuar sendo inline mas poderá conter características de block, por exemplo: tamanho, aktura, largura. */
+        - display: block
+            -> Comportamento: Eles sempre começam em uma nova linha e ocupam 100% da largura disponível do elemento pai, mesmo que o conteúdo lá dentro seja minúsculo.
+            -> Propriedades: Aceitam totalmente width, height, margin e padding. Se você definir uma largura menor (ex: width: 50%;), o elemento vai encolher, mas a linha ao lado dele continuará vazia, pois ele bloqueia o espaço.
+            -> Exemplos comuns: <div>, <p>, <h1> até <h6>, <section>, <ul>.
+        */
+
+        /*Você consegue mudar a característica de um box-level ou um inline-level colocando a característica "display" e mudando para o contrário do que o elemento é (block ou inline). 
+
+        Você também consegue colocar um "display: inline block". Nesse modo, o elemento vai continuar sendo inline mas poderá conter características de block, por exemplo: tamanho, altura, largura. */
 
         h1 { /*box-level*/
             background-color: lightgray;
