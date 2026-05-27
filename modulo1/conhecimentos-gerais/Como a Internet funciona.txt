@@ -1,6 +1,7 @@
 Como a Internet funciona?
-TCP/IP é um conjunto de protocolos que possibilita a comunicação entre computadores e servidores, formando a Internet. Ele combina o Protocolo de Controle de Transmissão (TCP), responsável pela transmissão de dados, com o Protocolo de Internet (IP), que identificar os computadores e servidores.
-Protocolo de Internet - é um protocolo de comunicação usado entre todas as máquinas em rede para encaminhamento dos dados.
+TCP/IP é um conjunto de protocolos que possibilita a comunicação entre computadores e servidores, formando a Internet.
+IP (internet Protocol)- idenfitica o endereço IP e rotea os pacotes. Connectionless (envia os pacotes sem avisar o destino antes).
+TCP (Transmission Control Protocol) - Controlar o fluxo, ordenar os dados e garantir a entrega de forma confiável. Reorganiza todos os pacotes na ordem correta no destino. Se um pacote sumir, ele solicita a retransmissão automática. Connection-oriented (estabelece uma conexão firme entre os dispositivos antes do envio).
 
 WWW - subrede da Internet. É o conjuto de redes da Internet especializado em HTTP.
 HTTP - protocolo incluído no TCP/IP.
