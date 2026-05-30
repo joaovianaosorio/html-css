@@ -46,3 +46,7 @@ align-items
 -> align-items: flex-start - os itens ficam no início do eixo transversal (cross-start).
 -> align-items: flex-end - os itens ficam no final do eixo transversal (cross-end).
 -> align-items: center - os itens ficam no centro cross-axis.
+
+para centralizar uma div completamente, você deve colocar na caixa pai os atributos "justify-content: center;" e "align-items: center;".
+
+conteúdo empacotado
