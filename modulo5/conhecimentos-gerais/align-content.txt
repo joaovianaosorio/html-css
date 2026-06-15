@@ -1,0 +1,15 @@
+align-content
+alinha os elementos dentro do eixo transversal, QUANDO EMPACOTADOS!
+	align-content: stretch (padrão) - pega a dimensão inteira e divide em duas partes iguais (dependendo de quantas linhas tem). Após separar em duas partes, ele colocará os itens nas partes correspondentes às suas linhas e esticará o conteúdo em direção ao eixo-principal, chegando na linha final da parte dividida.
+	align-content: flex-start - reserva um espaço em branco no final do cross-axis.
+	align-content: flex-end - reserva um espaço em branco  no início do cross-axis.
+	align-content: center - reserva espaços em branco  no início do cross-axis e no final do cross-axis.
+	align-content: space-between - deixa um espaço em branco entre os as linhas (contendo os elementos).
+	align-content: space-evenly - reserva espaços em branco  no início do cross-axis, no final do cross-axis e um espaço em branco entre os as linhas (contendo os elementos). Esses espaços são simétricos.
+	align-content: space-around - ega a dimensão inteira e divide em duas partes iguais e centraliza os elementos dentro dessas partes.
+	
+align-itens
+vai alinhar os itens dentro do eixo transversal
+
+justify-content
+vai alinhar o conteúdo, itens, dentro do eixo principal
