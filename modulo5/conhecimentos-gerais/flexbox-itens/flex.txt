@@ -1,0 +1,16 @@
+flex
+
+flex = flex-grow + flex-shrink + flex-basis
+
+as configurações:
+- flex-basis: 150px;
+- flex-grow: 0;
+- flex-shrink: 1;
+
+podem ser substituídas por:
+- flex: 0 1 150px;
+
+- flex: 0 1 auto = flex: initial = padrão
+- flex: 0 0 auto = flex: none -> sem flexibilidade
+- flex: 1 1 auto = flex: auto -> máximo de flexibilidade
+- flex: 3 = flex: 3 1 auto -> só altera o flex-grow 
