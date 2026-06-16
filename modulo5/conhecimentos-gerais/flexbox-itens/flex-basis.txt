@@ -1,0 +1,5 @@
+flex-basis
+
+flex-basis: auto -> padrão. A largura dos itens para cada elemento é dada através do tamanho do seu conteúdo.
+
+flex-basis: 200px -> todos os elementos terão 200px. Como se trata de FLEXBOX, se você espremer o contêiner pai, logo, as caixas filhas também serão espremidas de forma com que a atribuição de 200px não seja fixa. Nesse caso, se o item tiver dentro dele um conteúdo que não caiba em menos de 200px, provavelmente ele vai fazer uma quebra de linha. Ele vai dar um jeito de dar certo.
