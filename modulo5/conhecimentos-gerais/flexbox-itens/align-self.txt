@@ -1,0 +1,6 @@
+align-self
+
+- atributo dos itens de um contêiner
+- funcionará sentido o eixo transversal (cross-axis)
+
+align-self: auto - vai seguir o alinhamento vertical do seu pai, seja o align-content ou o align-item.
