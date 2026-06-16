@@ -1,5 +1,14 @@
 flex-basis
 
 flex-basis: auto -> padrão. A largura dos itens para cada elemento é dada através do tamanho do seu conteúdo.
-
 flex-basis: 200px -> todos os elementos terão 200px. Como se trata de FLEXBOX, se você espremer o contêiner pai, logo, as caixas filhas também serão espremidas de forma com que a atribuição de 200px não seja fixa. Nesse caso, se o item tiver dentro dele um conteúdo que não caiba em menos de 200px, provavelmente ele vai fazer uma quebra de linha. Ele vai dar um jeito de dar certo.
+
+flex-shrink
+
+flex-shrink: 1 -> padrão. Quer dizer que pode encolher. Qualquer valor diferente de 0 e positivo, pode encolher. Se "flex-shrink: 0", quer dizer que não pode encolher.
+Se tivermos um "flex-shrink: 1" e um "flex-shrink: 2", o segundo vai encolher o dobro do primeiro. 
+
+flex-grow
+
+flex-grow: 0 -> padrão. Quer dizer que não pode aumentar. "flex-grow: 1", quer dizer que pode aumentar.
+Se tivermos um "flex-grow: 1" e um "flex-grow: 2", o segundo vai crescer o dobro do primeiro. Entretanto, se tivermos dois "flex-grow: 2", eles crescerão de forma proporcional.
