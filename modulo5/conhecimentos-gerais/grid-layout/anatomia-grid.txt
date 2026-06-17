@@ -1,0 +1,11 @@
+anatomia de um grid
+
+grid contêiner -> caixa com elementos dentro
+grid item -> item do grid (caixinha)
+grid track -> linha de itens
+row track -> linha deitada de itens
+column track -> linha em pé (coluna) de itens
+grid lines -> linhas em volta dos itens ou tracks. podem ser deitadas ou em pé. elas podem ser numeradas, se são verticais, da esquerda para direita começando do 1, ou, da direita para a esquerda começando do -1.
+elas podem ser numeradas, se são horizontais, de cima para baixo começando do 1, ou, de baixo para a cima começando do -1.
+grid área -> um conjunto de grid itens.
+grid gap -> espaço entre os grid itens e os grid lines.
