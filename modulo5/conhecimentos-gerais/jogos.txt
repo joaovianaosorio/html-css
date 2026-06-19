@@ -1,0 +1,12 @@
+flexboxfroggy.com
+para aprender a usar flexbox, basta entrar no link acima
+
+https://www.youtube.com/watch?v=ue1VadygZT8&list=PLHz_AreHm4dn1bAtIJWFrugl5z2Ej_52d&index=18
+resposta dos desafios de flexbox no link acima
+
+https://cssgridgarden.com/
+para aprender a usar grid layout, basta entrar no link acima
+
+https://www.youtube.com/watch?v=AXqAhjRHuSY&list=PLHz_AreHm4dn1bAtIJWFrugl5z2Ej_52d&index=33
+resposta dos desafios de grid layout no link acima
+
