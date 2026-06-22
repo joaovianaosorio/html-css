@@ -4,6 +4,7 @@ Devemos planejar o site com essas 3 coisas:
 - layout
 - cores
 - imagens
+- tipografia
 
 O planejamento pode demorar bastante e até ser chato, mas ele é ESSENCIAL para a criação de um site, NÃO PULE ESSA PARTE!
 
