@@ -11,7 +11,7 @@ Exemplo:
 --fonte-padrao: Arial, Helvetica, sans-serif;
 }
 
-O root serve para colocar as váriaveis, mas para fazer uma configuração global (uma configuração que vai afetar o estilo de todos os seus elemetos), você usa o *.
+O root serve para colocar as váriaveis, mas para fazer uma configuração global (uma configuração que vai afetar o estilo de todos os seus elementos), você usa o *.
 Exemplo:
 
 * {
