@@ -43,12 +43,12 @@ body {
 }
 
 a.externo::after {
-    content: '\1F517';
+    content: '\1F517'; /*colocar ícones via CSS*/
 }
 
 header {
     background-image: linear-gradient(to bottom, var(--cor2), var(--cor5));
-    background-color: var(--cor4);
+    background-color: var(--cor4); /*caso o degradê falhe*/
     min-height: 150px;
     text-align: center;
     padding-top: 40px;
@@ -84,7 +84,7 @@ nav {
 nav > a {
     color: white;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 5px; /*A borda só aparece quando passa o mouse por cima*/
     text-decoration: none;
     font-weight: bold;
     transition-duration: 0.5s; /*Esse atributo faz com que a transição do hover demore mais.*/
@@ -174,7 +174,7 @@ div.video > iframe {
     left: 5%;
     width: 90%;
     height: 90%;
-    /*As características sitadas acima são mais explicadas no arquivo "responsividade-em-videos" que está na pasta de conhecimentos gerais.*/
+    /*As características citadas acima são mais explicadas no arquivo "responsividade-em-videos" que está na pasta de conhecimentos gerais.*/
 }
 
 aside {
@@ -188,7 +188,7 @@ aside > ul {
     list-style-type: '\2714\00A0\00A0'; 
     /*O barra antes do código do emoji, pego no emojipedia, substitui o "U+" achado no site. 
     O "00A0" é o caractere "&nbsp;" do HTML, que significa "espaço sem quebra". Com ele, você da um espaço na linha sem quebra-la. Mas esse caractere NÃO é compatível com todos os navegadores.*/
-    list-style-position: inside; /*Dessa forma, a bolinha vaia para dentro da div.*/
+    list-style-position: inside; /*Dessa forma, a bolinha vai para dentro da div.*/
     columns: 2; /*Preste atenção no número de colunas que você coloca, porque em uma tela menor, pode ficar ruim.*/
 }
 
