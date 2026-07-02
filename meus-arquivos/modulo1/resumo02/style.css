@@ -9,6 +9,36 @@ h1, h2, h3, h4, h5, h6{
     color: red;
 }
 
+summary::marker{
+    content: '';
+}
+
+img{
+    display: block;
+    margin: auto;
+}
+
 p{
     color: rgb(218, 86, 86);
+    text-align: justify;
+}
+
+a{
+    text-decoration: none;
+}
+
+a[rel="external"]{
+    color: red;
+}
+
+a[rel="nofollow"]{
+    color: blue;
+}
+
+a[rel="external"]::after{
+    content: '\1F4AA';
+}
+
+a[rel="nofollow"]::after{
+    content: '\2694\FE0F';
 }
