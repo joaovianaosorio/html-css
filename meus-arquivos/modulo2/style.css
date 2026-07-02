@@ -1,7 +1,100 @@
 @charset "UTF-8";
 
-p{
-    background-image: radial-gradient(circle, red 10%, yellow 40%, green 100%);
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&');
+
+@font-face {
+    font-family: 'Conquest';
+    src: url('fonts/Conquest.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root{
+    --cor-principal: #01A3C7;
+    --cor-titulo: #FFE250;
+}
+
+html{
+    font-size: 62.5%; /*1rem = 10px*/
+}
+
+body{
+    font-size: 1.6rem;
+    background-color: rgb(24, 21, 21);
+}
+
+header{
+    background-image: linear-gradient(to bottom, #01A3C7 60%, rgba(0, 0, 0, 0.514));
+    background-color: var(--cor-principal);
+    margin-bottom: 2em;
+    padding-bottom: .5em;
+}
+
+header h1{
+    font-family: 'Archivo Black';
+    font-size: 10rem;
+    text-align: center;
+    color: var(--cor-titulo);
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.514);
+}
+
+header a{
+    color: white;
+    padding: 7px 10px;
+    font-size: 2rem;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+header a:hover{
+    color: var(--cor-titulo);
+    background-color: rgba(0, 0, 0, 0.233);
+    text-decoration: underline;
+}
+
+main{
+    display: block;
+    margin: auto;
+    background-color: white;
+    width: 800px;
+    margin-bottom: 2em;
+}
+
+.fonte{
+    font-family: Conquest;
+    background-color: yellow;
+}
+
+.gradient{
+    background-image: radial-gradient(circle, yellow 1%, rgb(81, 81, 255) 90%);
+    background-color: rgb(81, 81, 255);
     height: 200px;
     width: 200px;
+    border-radius: 50%;
+    margin: auto;
+}
+
+footer{
+    background-color: var(--cor-principal);
+    text-align: center;
+    padding: 10px;
+}
+
+address{
+    font-style: normal;
+    color: white;
+}
+
+address a{
+    color: white;
+}
+
+address a:hover{
+    color: var(--cor-titulo);
 }
