@@ -53,6 +53,7 @@ header a{
     font-size: 1.3em;
     text-decoration: none;
     border-radius: 10px;
+    transition: color .5s, background-color .5s;
 }
 
 header a:hover{
@@ -62,6 +63,7 @@ header a:hover{
 }
 
 main{
+    position: relative;
     display: block;
     margin: auto;
     background-color: white;
@@ -92,11 +94,11 @@ main p{
     padding: 5px 20px;
     text-indent: 1.1em;
     text-align: justify;
+    line-height: 1.7em;
 }
 
 main ul{
     padding: 5px 30px;
-    columns: 2;
 }
 
 main ul li{
@@ -115,7 +117,7 @@ main ul li{
 }
 
 .conteudo > a::after{
-    content: ' \1F587\FE0F';
+    content: '        \1F587\FE0F'; /*ao invés do espaço, poderia ser usado \00A0*/
 }
 
 .subtitulo{
@@ -153,6 +155,8 @@ aside > h3{
 
 aside > ul{
     padding: 10px 60px;
+    columns: 2;
+    list-style-type: circle;
 }
 
 aside a{
@@ -178,6 +182,17 @@ aside a:active{
     width: 200px;
     border-radius: 50%;
     margin: auto;
+}
+
+.fixed{
+    position: fixed;
+    color: yellow;
+    bottom: 20px;
+    right: 20px;
+}
+
+.teste::after{
+    content: '\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0 Palavra2';
 }
 
 footer{
