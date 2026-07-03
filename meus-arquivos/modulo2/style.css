@@ -18,6 +18,8 @@
 :root{
     --cor-principal: #01A3C7;
     --cor-titulo: #FFE250;
+    --cor-subtitulo: #ebd048;
+    --fonte-titulo: 'Archivo Black';
 }
 
 html{
@@ -34,11 +36,12 @@ header{
     background-color: var(--cor-principal);
     margin-bottom: 2em;
     padding-bottom: .5em;
+    min-width: 850px;
 }
 
-header h1{
-    font-family: 'Archivo Black';
-    font-size: 10rem;
+header > h1{
+    font-family: var(--fonte-titulo);
+    font-size: 8em;
     text-align: center;
     color: var(--cor-titulo);
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.514);
@@ -47,7 +50,7 @@ header h1{
 header a{
     color: white;
     padding: 7px 10px;
-    font-size: 2rem;
+    font-size: 1.3em;
     text-decoration: none;
     border-radius: 10px;
 }
@@ -62,13 +65,110 @@ main{
     display: block;
     margin: auto;
     background-color: white;
-    width: 800px;
+    min-width: 200px;
+    width: 850px;
     margin-bottom: 2em;
+    padding-bottom: 3px;
+    font: normal normal 1.2em Georgia, sans-serif;
+    border-radius: 5px;
 }
 
-.fonte{
+main h1{
+    font-size: 2em;
+    padding: 20px;
+    padding-bottom: 15px;
+    font-family: var(--fonte-titulo);
+    color: var(--cor-subtitulo);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.425);
+}
+
+main h2{
+    padding: 20px;
+    font-size: 1.3em;
+    color: var(--cor-subtitulo);
+}
+
+main p{
+    padding: 5px 20px;
+    text-indent: 1.1em;
+    text-align: justify;
+}
+
+main ul{
+    padding: 5px 30px;
+    columns: 2;
+}
+
+main ul li{
+    padding: 7px;
+}
+
+.conteudo > a{
+    color: blue;
+    text-decoration: none;
+    background-image: linear-gradient(to right, var(--cor-principal), rgb(168, 198, 233));
+}
+
+.conteudo > a:hover{
+    text-decoration: underline;
+    outline: 1px solid blue;
+}
+
+.conteudo > a::after{
+    content: ' \1F587\FE0F';
+}
+
+.subtitulo{
+    font-weight: bold;
+    color: var(--cor-principal);
+}
+
+main > article > .personagens img{
+    display: block;
+    margin: 20px auto;
+    border-radius: 5px;
+}
+
+main > .personagens h2{
     font-family: Conquest;
-    background-color: yellow;
+}
+
+aside{
+    background-color: #01A3C7;
+    border-radius: 15px;
+    margin: 30px auto;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    width: 750px;
+}
+
+aside > h3{
+    color: white;
+    background-color:#00596d;
+    font-size: 1em;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 10px;
+}
+
+aside > ul{
+    padding: 10px 60px;
+}
+
+aside a{
+    color: var(--cor-subtitulo);
+}
+
+aside a:visited{
+    color: var(--cor-subtitulo);
+}
+
+aside a:hover{
+    color: var(--cor-titulo);
+}
+
+aside a:active{
+    color: white;
 }
 
 .gradient{
@@ -84,6 +184,7 @@ footer{
     background-color: var(--cor-principal);
     text-align: center;
     padding: 10px;
+    min-width: 850px;
 }
 
 address{
